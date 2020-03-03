@@ -7,11 +7,12 @@ mat-sidenav-container, mat-sidenav {
     width: 100%;
     background-color: lightslategray;
     color: whitesmoke;
-    padding-left: 1%;
+    padding: 1%;
 }
 
-.menu > img{
-    padding-top: 10px;
+#icono > mat-icon{
+    margin-top: 10px;
+    font-size: 50px;
 }
 
 .menu > span {
@@ -23,9 +24,21 @@ mat-sidenav-container, mat-sidenav {
 }
 
 .menu > mat-icon {
-    font-size: 70px !important;
+    font-size: 40px !important;
+    margin-right: 1%;
 }
  
+#icono{
+    float: left;
+    height: 100%;
+}
+
+#logo{
+    margin-left: 30px;
+    float: left;
+    height: 100%;
+}
+
 mat-sidenav {
     width: 250px;
     background-color: whitesmoke;
@@ -69,4 +82,8 @@ mat-toolbar{
 button {
     background-color: darkslategray;
     
+}
+
+.mat-list-item-content{
+    margin-left: 1%;
 }

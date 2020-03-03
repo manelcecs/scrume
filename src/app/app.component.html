@@ -7,10 +7,12 @@
 
   <mat-sidenav-content>
     <div class="menu" >
-      <span>
+      <div id="icono">
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </div>
+      <div id="logo">
         <img src="../assets/logo.png" height="60px" width="220px"/>
-      </span>
+      </div>
     </div>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
