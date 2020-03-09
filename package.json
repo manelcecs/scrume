@@ -1,5 +1,5 @@
 {
-  "name": "flujo-completo",
+  "name": "scrume-front",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -51,6 +51,6 @@
   },
   "engines": {
     "node": "10.19.0",
-    "npm":"6.13.4"
+    "npm": "6.13.4"
   }
 }
