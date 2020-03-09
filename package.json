@@ -1,5 +1,5 @@
 {
-  "name": "flujo-completo",
+  "name": "scrume-front",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~9.0.3",
     "@angular/platform-browser-dynamic": "~9.0.3",
     "@angular/router": "~9.0.3",
+    "@schematics/angular": "^9.0.5",
     "express": "^4.17.1",
     "pass": "^0.2.0",
     "rxjs": "~6.5.4",
@@ -51,6 +52,6 @@
   },
   "engines": {
     "node": "10.19.0",
-    "npm":"6.13.4"
+    "npm": "6.13.4"
   }
 }
