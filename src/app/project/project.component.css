@@ -39,8 +39,7 @@ section > * {
 .content-sprints-project{
     margin-top: 3%;
     background-color: yellow;
-    display: table-cell;
-    vertical-align: center;
+    
 }
 
 .title-progress-project {
@@ -48,7 +47,9 @@ section > * {
     width: 60%;
     background-color: blue;
     padding-right: 1em;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -56,6 +57,7 @@ section > * {
     float: right;
     width: 40%;
     align-content: center;
+    
 }
 
 .name-sprint-project {
