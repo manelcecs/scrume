@@ -1,38 +1,75 @@
-.button-sprints {
-    background-color: #38b6ff;
-    color: white;
+#main-project {
+    padding: 3% 10%;
 }
-.button-sprints:hover {
-    background-color: #18a1f0;
-}
-
 section > * {
     float: left;
 }
-
-#main-project {
-    padding: 3% 10%;
-    float: left;
-}
-
+/* Header Proyect */
 #header-project {
     margin-bottom: 2%;
     float: left;
 }
-
-#buttons-project {
-    background-color: red;
-    float: right;
+#header-project > div > p{
+    text-align: justify;
 }
+/*------------------------------*/
 
+/* Sprints Project */
 #sprints-project > div{
     width: 100%;
 }
 
-#header-sprints-project > div{
-    background-color: red;
-    width: 40%;
+#title-sprint{
+    float:left;
 }
+
+#buttons-project {
+    float: right;
+}
+.button-sprints {
+    background-color: #38B6FF;
+    color: white;
+    margin-left: 1em;
+}
+.button-sprints:hover {
+    background-color: #18A1F0;
+}
+/*------------------------------*/
+
+.content-sprints-project{
+    margin-top: 3%;
+    background-color: yellow;
+    display: table-cell;
+    vertical-align: center;
+}
+
+.title-progress-project {
+    float: left;
+    width: 60%;
+    background-color: blue;
+    padding-right: 1em;
+    
+    
+}
+
+.statistics-sprint-project {
+    float: right;
+    width: 40%;
+    align-content: center;
+}
+
+.name-sprint-project {
+    float: left;
+    width: 30%;
+    background-color: green;
+}
+
+.progress-project{
+    float: right;
+    width: 70%;
+    background-color: red;
+}
+
 
 
 
