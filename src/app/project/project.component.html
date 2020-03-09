@@ -1,5 +1,5 @@
-<div>
-    <section>
+<div id="main-project">
+    <section id="header-project">
         <div>
             <h3><a href="/">{{team}}</a> > {{project}}</h3> 
         </div>
@@ -7,13 +7,17 @@
             <p>{{desc}}</p>
         </div>
     </section>
-    <section>
-        <div>
-            <h4>Sprints</h4>
-            <button class="button-sprints" mat-flat-button>Nuevo Sprint</button>
-            <button class="button-sprints" mat-flat-button>Product Backlog</button>
+    <section id="sprints-project">
+        <div id="header-sprints-project">
+            <div>
+                <h4>Sprints</h4>
+            </div>
+            <div id="buttons-project">
+                <button class="button-sprints" mat-flat-button>Nuevo Sprint</button>
+                <button class="button-sprints" mat-flat-button>Product Backlog</button>
+            </div>
         </div>
-        <div>
+        <div id="content-sprints-project">
             <div>
                 <div>
                     <p>Sprint 1</p>
@@ -72,9 +76,8 @@
                             <td>27<a matTooltip="Puntos de Historia"> ph </a>realizados</td>
                         </tr>
                     </table>
-                </div>
-            </div>
-            
+                </div> 
         </div>
+    </div>
     </section>
 </div>

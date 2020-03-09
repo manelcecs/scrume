@@ -5,3 +5,34 @@
 .button-sprints:hover {
     background-color: #18a1f0;
 }
+
+section > * {
+    float: left;
+}
+
+#main-project {
+    padding: 3% 10%;
+    float: left;
+}
+
+#header-project {
+    margin-bottom: 2%;
+    float: left;
+}
+
+#buttons-project {
+    background-color: red;
+    float: right;
+}
+
+#sprints-project > div{
+    width: 100%;
+}
+
+#header-sprints-project > div{
+    background-color: red;
+    width: 40%;
+}
+
+
+
