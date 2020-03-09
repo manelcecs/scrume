@@ -25,14 +25,18 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatListModule} from '@angular/material/list';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
-import { WellcomeComponent } from './wellcome/wellcome.component'; 
+import { WellcomeComponent } from './wellcome/wellcome.component';
+import { TeamComponent } from './team/team.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
-    WellcomeComponent
+    WellcomeComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,9 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule, 
+    MatListModule,
+    ScrollingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
