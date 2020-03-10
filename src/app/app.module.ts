@@ -29,6 +29,7 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
 import { ProjectComponent } from './project/project.component'; 
 import { MatButtonModule } from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { CreateProjectComponent } from './create-project/create-project.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     AppComponent,
     BienvenidaComponent,
     WellcomeComponent,
-    ProjectComponent
+    ProjectComponent,
+    CreateProjectComponent,
   ],
   imports: [
     BrowserModule,

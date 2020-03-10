@@ -40,7 +40,10 @@ section > * {
 .content-sprints-project{
     margin-top: 3%;
 }
-    
+
+.info-sprint-project {
+    margin-bottom: 5%;
+}
 
 .title-progress-project {
     float: left;

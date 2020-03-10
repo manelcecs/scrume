@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectComponent implements OnInit {
   team : string = "Olimpia"
   project : string = "Acme-Madrugá"
-  desc : string = "Proyecto para la asignatura de Diseño y Pruebas 2. El objetivo es que los usuarios (hermandades de semana santa) puedan organizar sus cofradías y los hermanos puedan apuntarse. Ta guay.";
+  desc : string = "Proyecto para la asignatura de Diseño y Pruebas 2. El objetivo es que los usuarios (hermandades de semana santa) puedan organizar sus cofradías y los hermanos puedan apuntarse. El A+ para este proyecto es la inclusión de un sistema de gráficos en el dashboard.";
   
 
   constructor() { }

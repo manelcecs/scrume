@@ -1,0 +1,28 @@
+ <div id="main-project">
+    <section>
+            <div>
+                <h3><a href="/">Olimpia</a> > Crear un proyecto</h3> 
+            </div>
+    </section>
+
+    <section>
+        <form id="form-project-create">
+            <mat-form-field class="form-field-project-create">
+                <input matInput placeholder="Nombre">
+                <!-- <input matInput placeholder="Nombre" [formControl]="nameFormControl">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !nameFormControl.hasError('required')">
+                El nombre no debe estar en blanco
+                </mat-error> -->
+            </mat-form-field> <br/>
+            
+            <mat-form-field class="form-field-project-create">
+                <textarea matInput  placeholder="Descripción"></textarea>
+            </mat-form-field> <br/>
+            <div id="buttons-project-create">
+                <button id="cancel-project-create" mat-flat-button>Cancelar</button>
+                <button id="save-project-create" form="form-project-create" mat-flat-button>Guardar</button>
+            </div>
+        </form>
+    </section>
+</div>
+  
