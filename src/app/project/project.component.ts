@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProjectService } from '../servicio/project.service';
+import { ProjectDto } from '../dominio/project.domain';
+import { Sprint } from '../dominio/sprint.domain';
+import { SprintService } from '../servicio/sprint.service';
 
 @Component({
   selector: 'app-project',
@@ -6,14 +11,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-  team : string = "Olimpia"
-  project : string = "Acme-Madrugá"
-  desc : string = "Proyecto para la asignatura de Diseño y Pruebas 2. El objetivo es que los usuarios (hermandades de semana santa) puedan organizar sus cofradías y los hermanos puedan apuntarse. El A+ para este proyecto es la inclusión de un sistema de gráficos en el dashboard.";
-  
+  project : ProjectDto;
+  sprints : Sprint[];
 
-  constructor() { }
+  constructor(
+    // private router: Router,
+    // private projectService: ProjectService, 
+    // private sprintService : SprintService
+    ) { }
 
   ngOnInit(): void {
+    // this.project = this.projectService.getProject(0);
+    // this.sprints = this.sprintService.getSprintsOfProject(0);
   }
 
 }

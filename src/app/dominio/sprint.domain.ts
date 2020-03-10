@@ -1,10 +1,10 @@
-export interface sprint {
-    id: Number;
+export interface Sprint {
+    id: number;
     starDate: Date;
     endDate: Date;
-    totalTasks: Number;
-    completedTasks: Number;
-    totalHP: Number;
-    completedHP: Number;
+    totalTasks: number;
+    completedTasks: number;
+    totalHP: number;
+    completedHP: number;
 
 }
