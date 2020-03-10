@@ -5,7 +5,7 @@ mat-sidenav-container, mat-sidenav {
 .menu{
     height: 10%;
     width: 100%;
-    background-color: lightslategray;
+    background-color: black;
     color: whitesmoke;
     padding: 1%;
 }
