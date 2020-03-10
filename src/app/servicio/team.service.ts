@@ -24,7 +24,7 @@ export class TeamService {
         };
         let team2: Team = {
             id: 4,
-            name: "Gamus",
+            name: "Scrume",
             projects: [{
                 id: 5,
                 name: "Dp3"
@@ -33,9 +33,24 @@ export class TeamService {
                 name: "Dp4"
             }],
         };
+        let team3: Team = {
+            id: 7,
+            name: "Gamus",
+            projects: [{
+                id: 8,
+                name: "Dp5"
+            },{
+                id: 9,
+                name: "Dp6"
+            },{
+                id: 10,
+                name: "ispp"
+            }],
+        };
         let teams:Team[]=[];
         teams.push(team1);
         teams.push(team2);
+        teams.push(team3);
         return teams;
 
     }

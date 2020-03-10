@@ -1,22 +1,48 @@
-<!-- <cdk-virtual-scroll-viewport itemSize="60">
-    <dl>
-      <ng-container *cdkVirtualFor="let team of teams">
-        <dt><mat-icon>people</mat-icon>{{team.name}}</dt>
-        <dd *ngFor="let project of team.project">{{project.name}}</dd>
-      </ng-container>
-    </dl>
-  </cdk-virtual-scroll-viewport> -->
+<div class="general">
 
+<section>
+<div id="header-sprints-project">
+  <div id="title-sprint">
+      <h1 class="TM">Teams</h1>
+  </div>
+  <div id="buttons-project">
+    <button class="but" mat-flat-button>Crear Equipo</button>
+  </div>
+</div>
+</section>
 
-  <mat-list>
-    <mat-list-item *ngFor="let team of teams">
-      <mat-icon matListIcon>people</mat-icon>
-      <h3 matLine> {{team.name}} </h3>
-      <mat-list-item *ngFor="let project of team.projects">
-        <mat-card>
-            <mat-card-title>{{project.name}}</mat-card-title>
-            <!-- <img mat-card-image src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" width="50" height="100"> -->
-        </mat-card>
-      </mat-list-item>
+<div class="equiposGeneral">
+
+    <mat-list-item class="team" *ngFor="let team of teams">
+      <div class="first-div">
+        
+        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon matListIcon>add</mat-icon></h3>
+      </div>
+      <div>
+        <mat-list-item *ngFor="let project of team.projects">
+      
+          <mat-card class="second-div">
+
+            <mat-card-title class="md-card-title">{{project.name}}</mat-card-title>
+
+            <mat-card class="div2">
+
+                <a href=""><mat-icon matListIcon>table_chart</mat-icon></a>
+                <a href=""><mat-icon matListIcon>insert_chart</mat-icon></a>
+                <a href=""><mat-icon matListIcon>work</mat-icon></a>
+
+            </mat-card>
+
+          </mat-card>
+          
+          <div></div>
+          
+        </mat-list-item>
+        
+      </div>
+      
     </mat-list-item>
-  </mat-list>
+
+</div>
+
+</div>
