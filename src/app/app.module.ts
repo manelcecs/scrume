@@ -30,7 +30,7 @@ import { ProjectComponent } from './project/project.component';
 import { MatButtonModule } from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CreateProjectComponent } from './create-project/create-project.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -62,6 +62,7 @@ import { CreateProjectComponent } from './create-project/create-project.componen
     MatListModule,
     MatButtonModule,
     MatTooltipModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

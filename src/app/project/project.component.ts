@@ -15,14 +15,14 @@ export class ProjectComponent implements OnInit {
   sprints : Sprint[];
 
   constructor(
-    // private router: Router,
-    // private projectService: ProjectService, 
-    // private sprintService : SprintService
+     private router: Router,
+     private projectService: ProjectService, 
+     private sprintService : SprintService
     ) { }
 
   ngOnInit(): void {
-    // this.project = this.projectService.getProject(0);
-    // this.sprints = this.sprintService.getSprintsOfProject(0);
+     this.project = this.projectService.getProject(0);
+     this.sprints = this.sprintService.getSprintsOfProject(0);
   }
 
 }
