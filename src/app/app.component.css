@@ -1,63 +1,32 @@
-mat-sidenav-container, mat-sidenav {
-    height: 100%;
-}
-
 .menu{
-    height: 10%;
-    width: 100%;
     background-color: black;
-    color: whitesmoke;
-    padding: 1%;
 }
 
-#icono-desplegar-menu{
-    align-content: center;
-    justify-content: left;
-    width: auto;
-}
+/* Boton de desplegar */
 
-#icono-desplegar-menu > img {
-    height: 100%;
-}
+/* ------------------- */
+
+/* LOGO */
 
 
-.menu > div > img:hover {
-    cursor: pointer;
-}
+/* ----------------------------- */
 
-.menu > mat-icon {
-    font-size: 40px !important;
-    margin-right: 1%;
-}
- 
-#icono-desplegar-menu{
-    float: left;
-    height: 100%;
-}
 
-#logo{
-    margin-left: 1%;
-    float: left;
-    height: 100%;
-}
+/* Deplegable */
 
 mat-sidenav {
-    width: 250px;
+    height: 100%;
+    width: 20%;
     background-color: whitesmoke;
 }
- 
-main {
-    padding: 10px;
+
+mat-sidenav-container {
+    height: 100%;
 }
+
 
 a:hover {
     cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color:  #019CDD;
-    align-content: flex-start;
 }
  
 .mat-list-item{
@@ -74,12 +43,6 @@ a {
 mat-toolbar{
     border-radius: 3px;
 }
- 
-@media(max-width: 959px){
-    mat-toolbar{
-        border-radius: 0px;
-    }
-}
 
 button {
     background-color: darkslategray;
@@ -90,7 +53,10 @@ button {
     margin-left: 1%;
 }
 
-/* Responsive css */
+/* ----------------------------- */
+
+
+/* Responsive css
 @media only screen and (max-width: 600px) {
     .menu > div > img {
         height: 60%;
@@ -99,4 +65,4 @@ button {
     .menu > div {
         margin-right: 5%;
     }
-  }
+  } */

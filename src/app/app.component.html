@@ -6,14 +6,14 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <div class="menu" >
-      <div id="icono-desplegar-menu">
-        <img (click)="sidenav.toggle()" src="../assets/menu-navbar.png"/>
-      </div>
-      <div id="logo">
-        <img src="../assets/logo-2.png"/>
-      </div>
-    </div>
+    <nav class="navbar navbar-dark menu">
+      <a class="logo" href="#">
+        <img (click)="sidenav.toggle()" src="../assets/menu-navbar.png" width="30" height="30" class="d-inline-block align-top menu-icon" alt="">
+        <img src="../assets/logo-2.png" width="auto" height="30" class="d-inline-block align-top" alt="">
+      </a>
+    </nav>    
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+
