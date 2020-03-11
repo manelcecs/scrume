@@ -10,16 +10,18 @@ mat-sidenav-container, mat-sidenav {
     padding: 1%;
 }
 
-#icono > mat-icon{
-    margin-top: 5%;
-    font-size: 50px;
+#icono-desplegar-menu{
+    align-content: center;
+    justify-content: left;
+    width: auto;
 }
 
-.menu > span {
-    margin-left: 1%;
+#icono-desplegar-menu > img {
+    height: 100%;
 }
 
-.menu > mat-icon:hover {
+
+.menu > div > img:hover {
     cursor: pointer;
 }
 
@@ -28,13 +30,13 @@ mat-sidenav-container, mat-sidenav {
     margin-right: 1%;
 }
  
-#icono{
+#icono-desplegar-menu{
     float: left;
     height: 100%;
 }
 
 #logo{
-    margin-left: 30px;
+    margin-left: 1%;
     float: left;
     height: 100%;
 }
@@ -87,3 +89,14 @@ button {
 .mat-list-item-content{
     margin-left: 1%;
 }
+
+/* Responsive css */
+@media only screen and (max-width: 600px) {
+    .menu > div > img {
+        height: 60%;
+        background-color: lightblue;
+    }
+    .menu > div {
+        margin-right: 5%;
+    }
+  }

@@ -1,5 +1,5 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side">
+  <mat-sidenav #sidenav mode="over">
     <a mat-list-item *ngFor="let item of routes" (click)="navigateTo(item.route); sidenav.close();">
       <mat-icon>{{item.icon}}</mat-icon> {{item.title}}
     </a>    
@@ -7,11 +7,11 @@
 
   <mat-sidenav-content>
     <div class="menu" >
-      <div id="icono">
-        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      <div id="icono-desplegar-menu">
+        <img (click)="sidenav.toggle()" src="../assets/menu-navbar.png"/>
       </div>
       <div id="logo">
-        <img src="../assets/logo-2.png" height="90%" width="auto"/>
+        <img src="../assets/logo-2.png"/>
       </div>
     </div>
     <router-outlet></router-outlet>

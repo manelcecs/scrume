@@ -9,7 +9,7 @@ export class ProjectService {
 
     constructor(private httpClient:HttpClient, private cabeceraService:CabeceraService){}
 
-    getProject(idProject : Number){
+    getProject(idProject : number){
         let project : ProjectDto = {
             id: 1,
             name: "Acme-Madrugá",

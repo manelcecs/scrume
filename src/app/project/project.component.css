@@ -8,10 +8,17 @@ section > * {
 #header-project {
     margin-bottom: 2%;
     float: left;
+    background-color: ;
+    
+}
+
+#header-project > div{
+    width: 100%;
     
 }
 #header-project > div > p{
     text-align: justify;
+    
 }
 /*------------------------------*/
 
@@ -39,10 +46,14 @@ section > * {
 
 .content-sprints-project{
     margin-top: 3%;
+    
 }
 
 .info-sprint-project {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    float: left;
+    width: 100%;
+    
 }
 
 .title-progress-project {
