@@ -25,14 +25,20 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatListModule} from '@angular/material/list';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
-import { WellcomeComponent } from './wellcome/wellcome.component'; 
-
+import { WellcomeComponent } from './wellcome/wellcome.component';
+import { ProjectComponent } from './project/project.component'; 
+import { MatButtonModule } from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { CreateProjectComponent } from './create-project/create-project.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
-    WellcomeComponent
+    WellcomeComponent,
+    ProjectComponent,
+    CreateProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +59,10 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule, 
+    MatListModule,
+    MatButtonModule,
+    MatTooltipModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
