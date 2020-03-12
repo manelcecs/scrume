@@ -29,6 +29,8 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
 import { TeamComponent } from './team/team.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { HttpClientModule } from '@angular/common/http';
+import { TeamCreateComponent } from './team-create/team-create.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     BienvenidaComponent,
     WellcomeComponent,
-    TeamComponent
+    TeamComponent,
+    TeamCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatListModule,
     ScrollingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

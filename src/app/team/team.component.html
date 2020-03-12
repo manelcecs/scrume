@@ -6,7 +6,7 @@
       <h1 class="TM">Teams</h1>
   </div>
   <div id="buttons-project">
-    <button class="but" mat-flat-button>Crear Equipo</button>
+    <button class="but" mat-flat-button  (click)="createTeam()" >Crear Equipo</button>
   </div>
 </div>
 </section>
@@ -16,7 +16,7 @@
     <mat-list-item class="team" *ngFor="let team of teams">
       <div class="first-div">
         
-        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon matListIcon>add</mat-icon></h3>
+        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon matListIcon>add</mat-icon><mat-icon (click)="editTeam(team)" matListIcon>create</mat-icon></h3>
       </div>
       <div>
         <mat-list-item *ngFor="let project of team.projects">
@@ -34,13 +34,11 @@
             </mat-card>
 
           </mat-card>
-          
-          <div></div>
-          
+
         </mat-list-item>
         
       </div>
-      
+       
     </mat-list-item>
 
 </div>

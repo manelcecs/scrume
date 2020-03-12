@@ -18,4 +18,12 @@ export class TeamComponent implements OnInit {
     this.teams = this.teamService.getAllTeams(); //añadir subscribe((teams:IPaginationPage<Teams>)=>{this.teams = teams});
   }
 
+  createTeam(): void {
+    this.router.navigate(['teamsCreate']);
+  }
+
+  editTeam(row: Team): void{
+    this.router.navigate(['teamsCreate'], {queryParams: {id: row.id}});
+  }
+
 }
