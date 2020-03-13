@@ -87,6 +87,13 @@ export class TeamCreateComponent implements OnInit {
 
   }
 
+  //private _deleteTeam(id: number):any/*Observable<Team>*/{
+    
+  //  this.team.projects = this.projects;
+  //  return this.teamService.deleteTeam(id, this.team);
+
+  //}
+
   cancelCreateteam(): void {
 
     this.router.navigate(['teams']);
@@ -95,7 +102,7 @@ export class TeamCreateComponent implements OnInit {
 
   getErrorMessageName(): String {
 
-    return this.name.hasError('required')?'Este campo es requerido.':this.name.hasError('maxLength')?'Este campo no permite más de 15 caracteres.':'';
+    return this.name.hasError('required')?'Este campo es requerido.':this.name.hasError('maxlength')?'Este campo no permite más de 15 caracteres.':'';
 
   }
 

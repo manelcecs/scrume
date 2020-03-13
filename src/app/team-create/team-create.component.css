@@ -1,0 +1,52 @@
+#main-team {
+    padding: 3% 25%;
+}
+
+#main-team > section{
+    padding-bottom: 1%;
+}
+
+#save-team-create {
+    background-color: #38B6FF;
+    color: white;
+    margin-left: 3%;
+    padding: 4px 9px;
+    text-align: center;
+}
+
+#save-team-create:hover {
+    background-color: #18A1F0;
+}
+
+#cancel-team-create {
+    background-color: #e62e2e;
+    color: white;
+    margin-left: 3%;
+    padding: 4px 9px;
+    text-align: center;
+}
+
+#cancel-team-create:hover {
+    background-color: #db0f0f;
+}
+
+#delete-team-create {
+    background-color: #471313;
+    color: white;
+    margin-left: 3%;
+    padding: 4px 9px;
+    text-align: center;
+}
+
+#delete-team-create:hover {
+    background-color: #471313;
+}
+
+.form-field-team-create{
+    width: 100%;
+}
+
+#buttons-team-create{
+    display: flex;
+    justify-content: left;
+}
