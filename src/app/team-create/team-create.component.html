@@ -11,11 +11,12 @@
                 <input #nameImput matInput placeholder="Nombre" [formControl]="name">
                 <mat-hint>{{ nameImput.value?.length || 0 }}/15</mat-hint>
                 <mat-error *ngIf="name.invalid">{{ getErrorMessageName() }}</mat-error>
-            </mat-form-field> <br/>
+            </mat-form-field> <br/> <br/>
             
             <div id="buttons-team-create">
                 <button id="cancel-team-create" (click)="cancelCreateteam()" mat-flat-button>Cancelar</button>
                 <button id="save-team-create" type="submit" [disabled]="!validForm()" (click)="createTeam()" mat-flat-button>Guardar</button>
+                <button *ngIf="team.id != undefined" id="delete-team-create" mat-flat-button>Borrar</button>
             </div>
         </form>
     </section>
