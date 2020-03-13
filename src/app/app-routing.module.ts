@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'bienvenida', component: BienvenidaComponent},
   {path: 'wellcome', component: WellcomeComponent},
   {path: 'teams', component: TeamComponent},
-  {path: 'teamsCreate', component: TeamCreateComponent}
+  {path: 'teamsCreate', component: TeamCreateComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'project/create', component: CreateProjectComponent},
 

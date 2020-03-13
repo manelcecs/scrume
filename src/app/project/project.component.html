@@ -21,7 +21,7 @@
             <div *ngFor="let sprint of sprints; index as i;" class="info-sprint-project">
                 <div class="title-progress-project">
                     <div class="name-sprint-project">
-                        <p>Sprint {{i}}</p>
+                        <p>Sprint {{i+1}}</p>
                     </div>
                     <div class="progress progress-project">
                         <div class="progress-bar bg-success" role="progressbar" style="width: {{(sprint.completedHP / sprint.totalHP) * 100}}%" aria-valuemin="0" aria-valuemax="100"></div>
