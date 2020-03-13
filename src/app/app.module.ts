@@ -27,10 +27,14 @@ import {MatListModule} from '@angular/material/list';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
 import { ProjectComponent } from './project/project.component'; 
+import { TeamComponent } from './team/team.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 import { MatButtonModule } from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CreateProjectComponent } from './create-project/create-project.component';
+import { TeamCreateComponent } from './team-create/team-create.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,8 @@ import { HttpClientModule } from '@angular/common/http';
     WellcomeComponent,
     ProjectComponent,
     CreateProjectComponent,
+    TeamComponent,
+    TeamCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +68,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatListModule,
     MatButtonModule,
     MatTooltipModule,
+    ScrollingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
   ],
   providers: [],

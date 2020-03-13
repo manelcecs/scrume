@@ -56,8 +56,13 @@ export class AppComponent implements OnInit, OnDestroy {
         route: '/wellcome',
         icon: 'home',
         visible: 'true'
+    },{
+        title: 'Equipo',
+        route: '/teams',
+        icon: 'people',
+        visible: 'true'
     }
   ];
-  }
+  } 
 
 }

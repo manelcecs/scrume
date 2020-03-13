@@ -1,0 +1,46 @@
+<div class="general">
+
+<section>
+<div id="header-sprints-project">
+  <div id="title-sprint">
+      <h1 class="TM">Teams</h1>
+  </div>
+  <div id="buttons-project">
+    <button class="but" mat-flat-button  (click)="createTeam()" >Crear Equipo</button>
+  </div>
+</div>
+</section>
+
+<div class="equiposGeneral">
+
+    <mat-list-item class="team" *ngFor="let team of teams">
+      <div class="first-div">
+        
+        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon matListIcon>add</mat-icon><mat-icon (click)="editTeam(team)" matListIcon>create</mat-icon></h3>
+      </div>
+      <div>
+        <mat-list-item *ngFor="let project of team.projects">
+      
+          <mat-card class="second-div">
+
+            <mat-card-title class="md-card-title">{{project.name}}</mat-card-title>
+
+            <mat-card class="div2">
+
+                <a href=""><mat-icon matListIcon>table_chart</mat-icon></a>
+                <a href=""><mat-icon matListIcon>insert_chart</mat-icon></a>
+                <a href=""><mat-icon matListIcon>work</mat-icon></a>
+
+            </mat-card>
+
+          </mat-card>
+
+        </mat-list-item>
+        
+      </div>
+       
+    </mat-list-item>
+
+</div>
+
+</div>

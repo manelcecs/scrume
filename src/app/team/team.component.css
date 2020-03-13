@@ -1,0 +1,74 @@
+.but {
+    background-color: #38B6FF;
+    color: white;
+    padding: 10px 10px;
+    float: right;
+    
+}
+.but:hover {
+    background-color: #18A1F0;
+}
+.TM {
+    float: left;
+}
+.general {
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-right: 10%;
+    margin-left: 7%;
+}
+.equiposGeneral {
+    margin-top: 5%;
+}
+.team {
+    margin-bottom: 5%;
+}
+.first-div {
+    float: left;
+    width: 100%;
+}
+.second-div {
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 2% 4%;
+    border-radius: 1px;
+    margin-right: 3%;
+    position: relative;
+    background-image: url("https://image.freepik.com/vector-gratis/fondo-abstracto-amarillo-brillante-rayos-brillantes_1017-20554.jpg");
+}
+
+.div2 {
+    float: left;
+    padding: 2% 4%;
+    border-radius: 1px;
+    margin-right: 3%;
+    position: absolute;
+    width: 91.5%;
+    height: 90%;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.5);
+}
+
+.second-div:hover .div2 {
+    display: block;
+}
+
+.second-div:hover {
+    display: block;
+    color: rgba(255, 255, 255, 0);
+}
+
+.div2 > a > mat-icon {
+    color: rgb(255, 255, 255);
+    width: 33%;
+    font-size: 3em;
+    padding-top: 10%;
+}
+
+.div2 > a > mat-icon:hover {
+    color: rgb(210, 210, 210);
+}

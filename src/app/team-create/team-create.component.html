@@ -1,0 +1,22 @@
+<div id="main-team">
+    <section>
+            <div>
+                <h3>{{ team != undefined?'Editar':'Crear' }} un equipo</h3> 
+            </div>
+    </section>
+
+    <section>
+        <form id="form-team-create">
+            <mat-form-field class="form-field-team-create">
+                <input #nameImput matInput placeholder="Nombre" [formControl]="name">
+                <mat-hint>{{ nameImput.value?.length || 0 }}/15</mat-hint>
+                <mat-error *ngIf="name.invalid">{{ getErrorMessageName() }}</mat-error>
+            </mat-form-field> <br/>
+            
+            <div id="buttons-team-create">
+                <button id="cancel-team-create" (click)="cancelCreateteam()" mat-flat-button>Cancelar</button>
+                <button id="save-team-create" type="submit" [disabled]="!validForm()" (click)="createTeam()" mat-flat-button>Guardar</button>
+            </div>
+        </form>
+    </section>
+</div>
