@@ -1,0 +1,48 @@
+<div id="main-project">
+    <section id="header-project">
+        <div>
+            <h3><a href="/">Olimpia</a> > {{project.name}}</h3> 
+        </div>
+        <div>
+            <p>{{project.description}}</p>
+        </div>
+    </section>
+    <section id="sprints-project">
+        <div id="header-sprints-project">
+            <div id="title-sprint">
+                <h4>Sprints</h4>
+            </div>
+            <div id="buttons-project">
+                <button class="button-sprints" mat-flat-button>Nuevo Sprint</button>
+                <button class="button-sprints" mat-flat-button>Product Backlog</button>
+            </div>
+        </div>
+        <div class="content-sprints-project">
+            <div *ngFor="let sprint of sprints; index as i;" class="info-sprint-project">
+                <div class="title-progress-project">
+                    <div class="name-sprint-project">
+                        <p>Sprint {{i+1}}</p>
+                    </div>
+                    <div class="progress progress-project">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: {{(sprint.completedHP / sprint.totalHP) * 100}}%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="statistics-sprint-project">
+                    <table class="table-statistics-project">
+                        <tr>
+                          <td class="cell-statistics-project">{{sprint.totalTasks}} tareas</td> 
+                          <td class="cell-statistics-project">{{sprint.completedTasks}} tareas hechas</td>
+                        </tr>
+                        <tr>
+                          <td class="cell-statistics-project">{{sprint.totalHP}}<a matTooltip="Puntos de Historia"> ph </a>totales</td>
+                          <td class="cell-statistics-project">{{sprint.completedHP}}<a matTooltip="Puntos de Historia"> ph </a>realizados</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            
+            
+    </div>
+    </section>
+</div>

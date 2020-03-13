@@ -1,0 +1,19 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="over">
+    <a mat-list-item *ngFor="let item of routes" (click)="navigateTo(item.route); sidenav.close();">
+      <mat-icon>{{item.icon}}</mat-icon> {{item.title}}
+    </a>    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <nav class="navbar navbar-dark menu">
+      <a class="logo">
+        <img (click)="sidenav.toggle()" src="../assets/menu-navbar.png" width="30" height="30" class="d-inline-block align-top menu-icon" alt="">
+        <img src="../assets/logo-2.png" width="auto" height="30" class="d-inline-block align-top" alt="">
+      </a>
+    </nav>    
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

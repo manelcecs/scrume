@@ -1,0 +1,36 @@
+#main-project {
+    padding: 3% 25%;
+}
+
+#main-project > section{
+    padding-bottom: 1%;
+}
+
+#save-project-create {
+    background-color: #38B6FF;
+    color: white;
+    margin-left: 1em;
+}
+
+#save-project-create:hover {
+    background-color: #18A1F0;
+}
+
+#cancel-project-create {
+    background-color: #e62e2e;
+    color: white;
+    margin-left: 1em;
+}
+
+#cancel-project-create:hover {
+    background-color: #db0f0f;
+}
+
+.form-field-project-create{
+    width: 100%;
+}
+
+#buttons-project-create{
+    display: flex;
+    justify-content: right;
+}

@@ -1,0 +1,97 @@
+#main-project {
+    padding: 3% 10%;
+}
+section > * {
+    float: left;
+}
+/* Header Proyect */
+#header-project {
+    margin-bottom: 2%;
+    float: left;
+    background-color: ;
+    
+}
+
+#header-project > div{
+    width: 100%;
+    
+}
+#header-project > div > p{
+    text-align: justify;
+    
+}
+/*------------------------------*/
+
+/* Sprints Project */
+#sprints-project > div{
+    width: 100%;
+}
+
+#title-sprint{
+    float:left;
+}
+
+#buttons-project {
+    float: right;
+}
+.button-sprints {
+    background-color: #38B6FF;
+    color: white;
+    margin-left: 1em;
+}
+.button-sprints:hover {
+    background-color: #18A1F0;
+}
+/*------------------------------*/
+
+.content-sprints-project{
+    margin-top: 3%;
+    
+}
+
+.info-sprint-project {
+    margin-bottom: 2%;
+    float: left;
+    width: 100%;
+    
+}
+
+.title-progress-project {
+    float: left;
+    width: 60%;
+    padding-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.6em;
+}
+
+.statistics-sprint-project {
+    float: right;
+    width: 40%;
+}
+
+.name-sprint-project {
+    float: left;
+    width: 30%;
+}
+
+.progress-project{
+    float: right;
+    width: 70%;
+    
+}
+
+.table-statistics-project{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.cell-statistics-project {
+    padding: 0.1%;
+    font-size: smaller;
+}
+
+
