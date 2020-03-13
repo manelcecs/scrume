@@ -16,7 +16,7 @@
     <mat-list-item class="team" *ngFor="let team of teams">
       <div class="first-div">
         
-        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon matListIcon>add</mat-icon><mat-icon (click)="editTeam(team)" matListIcon>create</mat-icon></h3>
+        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon (click)="createProject(team)" matListIcon>add</mat-icon><mat-icon (click)="editTeam(team)" matListIcon>create</mat-icon></h3>
       </div>
       <div>
         <mat-list-item *ngFor="let project of team.projects">
@@ -29,7 +29,7 @@
 
                 <a href=""><mat-icon matListIcon>table_chart</mat-icon></a>
                 <a href=""><mat-icon matListIcon>insert_chart</mat-icon></a>
-                <a href=""><mat-icon matListIcon>work</mat-icon></a>
+                <a><mat-icon (click)="openProject(project)" matListIcon>work</mat-icon></a>
 
             </mat-card>
 
