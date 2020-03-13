@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'teams', component: TeamComponent},
   {path: 'teamsCreate', component: TeamCreateComponent},
   {path: 'project', component: ProjectComponent},
-  {path: 'project/create', component: CreateProjectComponent},
+  {path: 'project/create', component: CreateProjectComponent}
 
 ];
 
