@@ -26,4 +26,8 @@ export class TeamComponent implements OnInit {
     this.router.navigate(['teamsCreate'], {queryParams: {id: row.id}});
   }
 
+/*  deleteTeam(row: Team): void{
+    this.router.navigate(['teamsCreate'], {queryParams: {id: row.id}});
+  }*/
+
 }
