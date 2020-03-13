@@ -16,7 +16,7 @@
             <div id="buttons-team-create">
                 <button id="cancel-team-create" (click)="cancelCreateteam()" mat-flat-button>Cancelar</button>
                 <button id="save-team-create" type="submit" [disabled]="!validForm()" (click)="createTeam()" mat-flat-button>Guardar</button>
-                <button *ngIf="team.id != undefined" id="delete-team-create" mat-flat-button>Borrar</button>
+                <button *ngIf="team != undefined" id="delete-team-create" mat-flat-button>Borrar</button>
             </div>
         </form>
     </section>
