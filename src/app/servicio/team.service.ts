@@ -105,19 +105,18 @@ export class TeamService {
         return response;
       }
 
-      /*deleteTeam(id: number, team: Team):any {
+      deleteTeam(id: number):any {
         // return this.httpClient.post<Team>(this.cabeceraService.getCabecera() + "/team?id=" + id, team);
         let response = new Observable(obs => {
 
             setTimeout(() => {
 
-                obs.next(team);
 
             }, 1000);
 
         });
         return response;
-      }*/
+      }
 
 }
 
