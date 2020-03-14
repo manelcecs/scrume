@@ -73,6 +73,10 @@ export class TeamCreateComponent implements OnInit {
 
   }
 
+  deleteTeam(team: Team): void{
+    this._deleteTeam(team.id);
+  }
+
   private _editTeam(id: number):any/*Observable<Team>*/{
     
     this.team.projects = this.projects;
@@ -87,12 +91,11 @@ export class TeamCreateComponent implements OnInit {
 
   }
 
-  //private _deleteTeam(id: number):any/*Observable<Team>*/{
+  private _deleteTeam(id: number):any/*Observable<Team>*/{
     
-  //  this.team.projects = this.projects;
-  //  return this.teamService.deleteTeam(id, this.team);
+    return this.teamService.deleteTeam(id);
 
-  //}
+  }
 
   cancelCreateteam(): void {
 
