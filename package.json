@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build --aot",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,7 +23,11 @@
     "@angular/router": "~9.0.3",
     "@schematics/angular": "^9.0.5",
     "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0",
+    "heroku-proxy": "^2.1.1",
+    "http-proxy": "^1.18.0",
     "pass": "^0.2.0",
+    "request": "^2.88.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

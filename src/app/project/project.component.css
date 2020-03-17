@@ -8,17 +8,15 @@ section > * {
 #header-project {
     margin-bottom: 2%;
     float: left;
-    background-color: ;
-    
 }
 
 #header-project > div{
     width: 100%;
-    
+
 }
 #header-project > div > p{
     text-align: justify;
-    
+
 }
 /*------------------------------*/
 
@@ -42,19 +40,29 @@ section > * {
 .button-sprints:hover {
     background-color: #18A1F0;
 }
+
+.button-delete-sprints {
+  background-color: #e62e2e;
+  color: white;
+  margin-left: 1em;
+}
+.button-delete-sprints:hover {
+  background-color: #db0f0f;
+}
+
 /*------------------------------*/
 
 .content-sprints-project{
     margin-top: 3%;
-    
+
 }
 
 .info-sprint-project {
     margin-bottom: 2%;
     float: left;
     width: 100%;
-    
 }
+
 
 .title-progress-project {
     float: left;
@@ -76,10 +84,15 @@ section > * {
     width: 30%;
 }
 
+
+.name-sprint-project :hover {
+  cursor: pointer;
+}
+
 .progress-project{
     float: right;
     width: 70%;
-    
+
 }
 
 .table-statistics-project{

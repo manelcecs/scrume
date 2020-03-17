@@ -1,0 +1,11 @@
+{   
+    "/api/*": {
+      "target": "https://api-scrume.cleverapps.io",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite":{
+        "^/api" : "https://api-scrume.cleverapps.io/api"
+      }
+    }
+  }

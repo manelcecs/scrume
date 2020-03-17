@@ -1,28 +1,26 @@
  <div id="main-project">
     <section>
             <div>
-                <h3><a href="/">Olimpia</a> > Crear un proyecto</h3> 
+                <h3><a href="/">Olimpia</a> > Crear un proyecto</h3>
             </div>
     </section>
 
     <section>
-        <form id="form-project-create">
+        <form id="form-project-create" method="POST" action="">
             <mat-form-field class="form-field-project-create">
-                <input matInput placeholder="Nombre">
-                <!-- <input matInput placeholder="Nombre" [formControl]="nameFormControl">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !nameFormControl.hasError('required')">
-                El nombre no debe estar en blanco
-                </mat-error> -->
+                <input matInput placeholder="Nombre" [formControl]="name">
+                <mat-error *ngIf="name.invalid">{{ getErrorMessageName() }}</mat-error>
             </mat-form-field> <br/>
-            
+
             <mat-form-field class="form-field-project-create">
-                <textarea matInput  placeholder="Descripción"></textarea>
+                <textarea matInput  placeholder="Descripción" [formControl]="desc"></textarea>
+                <mat-error *ngIf="desc.invalid">{{ getErrorMessageDesc() }}</mat-error>
             </mat-form-field> <br/>
             <div id="buttons-project-create">
-                <button id="cancel-project-create" mat-flat-button>Cancelar</button>
-                <button id="save-project-create" form="form-project-create" mat-flat-button>Guardar</button>
+                <button *ngIf="action === 'edit'" id="cancel-project-create" mat-flat-button (click)="cancel()">Cancelar</button>
+                <button *ngIf="action === 'create'" id="cancel-project-create" mat-flat-button (click)="navigateTo('teams')">Cancelar</button>
+                <button id="save-project-create" form="form-project-create" [disabled]="!validForm()" type="submit" mat-flat-button (click)="createProject()">Guardar</button>
             </div>
         </form>
     </section>
 </div>
-  

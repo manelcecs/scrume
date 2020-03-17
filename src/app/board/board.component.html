@@ -1,0 +1,40 @@
+<!-- <div *ngFor="let colum of colums"
+    cdkDropList
+    #todoList="cdkDropList"
+    class="example-list"
+    [cdkDropListData]="colum.name"
+    (cdkDropListDropped)="drop($event)">
+
+  <div class="colum">
+    <div class="nameColum" class="example-container">
+        <div class="nameColum"><h2 >{{colum.name}}</h2></div>
+    </div>
+    
+    <mat-list-item class="listaTareas" *ngFor="let tarea of colum.tareas" cdkDrag></mat-list-item>
+      <div class="nombreTarea" *ngFor="let tarea of colum.tareas" cdkDrag>
+        <p>{{tarea.title}}</p>
+      </div>
+    </mat-list-item>
+  </div>
+
+</div> -->
+
+
+<div cdkDropListGroup>
+  <div *ngFor="let colum of colums"
+    cdkDropList
+    [cdkDropListData]="colum.name"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+
+    <div class="nameColum">
+      <h2>{{colum.name}}</h2>
+    </div>
+
+    <div class="nombreTarea" class="example-box" *ngFor="let tarea of colum.tareas" cdkDrag>
+      <p class="nombreTarea">{{tarea.title}}</p>
+    </div>
+
+  </div>
+</div>
+    

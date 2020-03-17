@@ -1,0 +1,40 @@
+<section id="main">
+
+    <section id="header">
+
+        <div>
+            <h3><a href="" (click)="openTeam(project.team)">{{project.team.name}}</a> > <a href=""  (click)="openProject(project)">{{project.name}}</a> > Product Backlog</h3>
+        </div>
+
+    </section>
+
+    <section id="tasks">
+
+        <div id="task-menu">
+            <mat-form-field>
+                <input matInput placeholder="Buscar" [(ngModel)]="searchValue" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
+
+            <div id="button-container">
+                <button class="button-sprints" (click)="openCreateTask()" mat-flat-button disabled>Nueva tarea</button>
+            </div>
+        </div>
+
+        <div id="task-list">
+            <ul class="list-group list-group-flush">
+                <mat-list-item class="task-row" *ngFor="let task of project.tasks | filter:searchValue">
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center task-row">
+                        {{task.title}}
+                      <span>{{task.estimate!=undefined?task.estimate + ' PH':'Sin estimación'}}</span>
+                      <button class="button-sprints" (click)="openEditTask(task)" mat-flat-button disabled>Editar tarea</button>
+                      <button class="button-sprints" (click)="deleteTask(task)" mat-flat-button>Eliminar tarea</button>
+                    </li>
+
+                </mat-list-item>
+            </ul>
+        </div>
+
+    </section>
+
+</section>

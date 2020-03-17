@@ -1,0 +1,63 @@
+#main-sprint {
+    padding: 3% 10%;
+}
+section > * {
+    float: left;
+}
+section {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+/* Button */
+#edit-sprint {
+  background-color: #38B6FF;
+  color: white;
+  margin-left: 1em;
+}
+
+#edit-sprint:hover {
+  background-color: #18A1F0;
+}
+
+/* Sprint header */
+#header-sprint > div{
+    width: 100%;
+}
+
+/* Barra de progreso del sprint */
+#progress-table-sprint{
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.date-sprint{
+    width: 5%;
+}
+
+/* Lista de tableros */
+#list-section-workspace-sprint {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#list-section-workspace-sprint > mat-list {
+    width: 100%;
+}
+
+/* Métricas y gráficos */
+#dashboard-sprint {
+    width: 100%;
+    margin-top: 13%;
+}
+
+#dashboard-sprint > *{
+    width: 100%;
+}
+
+.cell-statistics-project {
+  width: 10%;
+  padding: 0.1%;
+  font-size: smaller;
+}

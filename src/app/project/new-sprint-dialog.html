@@ -1,0 +1,32 @@
+<h4>Crear sprint</h4>
+<div>
+  <form id="prueba" action="" method="POST">
+
+    <div>
+      <mat-form-field>
+        <mat-label>Fecha de inicio</mat-label>
+        <input matInput [formControl]="startDate" [matDatepicker]="pickerStar" />
+        <mat-datepicker-toggle matSuffix [for]="pickerStar"></mat-datepicker-toggle>
+        <mat-datepicker #pickerStar></mat-datepicker>
+        <mat-error *ngIf="startDate.invalid">{{ getErrorMessageStartDate() }}</mat-error>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Fecha de fin</mat-label>
+        <input matInput [formControl]="endDate" [matDatepicker]="pickerEnd" />
+        <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+        <mat-datepicker #pickerEnd></mat-datepicker>
+        <mat-error *ngIf="endDate.invalid">{{ getErrorMessageEndDate() }}</mat-error>
+      </mat-form-field>
+    </div>
+    <div id="buttons-dialog">
+      <button id="cancel-dialog" mat-button (click)="onNoClick()">
+        Cancelar
+      </button>
+      <button id="save-dialog" mat-button (click)="onSaveClick()" [disabled]="!validForm()" cdkFocusInitial>
+        Guardar
+      </button>
+    </div>
+  </form>
+</div>

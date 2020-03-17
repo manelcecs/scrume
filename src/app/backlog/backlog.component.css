@@ -1,0 +1,45 @@
+#main{
+    padding: 3% 10%;
+}
+
+/* Header */
+
+#header{
+}
+
+/* ---------------------------------- */
+
+/* Tasks */
+
+#tasks{
+    width: 100%;
+    padding: 2%;
+}
+
+#task-menu{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#task-menu > mat-form-field{
+    width: 50%;
+    display: flex;
+}
+
+#task-menu > #button-container{
+    width: 50%;
+    text-align: right;
+}
+
+#button-container > button{
+    float: right;
+    background-color:#38B6FF;
+    color:white;
+}
+
+#button-container > button:hover{
+    background-color:#18A1F0;
+}
+
+/* ---------------------------------- */

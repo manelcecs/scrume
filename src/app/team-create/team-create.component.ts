@@ -20,7 +20,7 @@ export class TeamCreateComponent implements OnInit {
 
   name: FormControl = new FormControl('',{validators: [Validators.required, Validators.maxLength(15)]});
 
-  private projects: ProjectDto[];
+  private projects: ProjectDto[] = [];
 
   ngOnInit(): void {
 
@@ -29,10 +29,17 @@ export class TeamCreateComponent implements OnInit {
       if (params.id != undefined){
         this.id = params.id;
 
-        this.team = this.teamService.getTeam(1);
-        this.name.setValue(this.team.name);
+        this.teamService.getAllTeams().subscribe((teams: Team[])=>{
+          this.team = teams.find((team: Team)=>{
+            if(team.id == this.id){
+              return team;
+            }
+          });
 
-        this.projects = this.team.projects;
+          this.name.setValue(this.team.name);
+
+          this.projects = this.team.projects;
+        });
 
       }
 
@@ -40,10 +47,10 @@ export class TeamCreateComponent implements OnInit {
 
   }
 
-  validForm():Boolean {
+  validForm():boolean {
 
-    let valid: Boolean = true;
-    
+    let valid: boolean = true;
+
     valid = valid && this.name.valid;
     return valid;
 
@@ -51,14 +58,12 @@ export class TeamCreateComponent implements OnInit {
 
   createTeam(): void {
 
-    this.team = {name: this.name.value, projects: []};
-
     if (this.id != undefined){
 
       this._editTeam(this.id).subscribe((resp: Team) => {
 
         this.team = resp;
-
+        this.navigateTo("teams");
       });
 
     }else{
@@ -66,33 +71,41 @@ export class TeamCreateComponent implements OnInit {
       this._createTeam().subscribe((resp: Team) => {
 
         this.team = resp;
-
+        this.navigateTo("teams");
+      },(error) => {
+        this.team = undefined;
       });
 
     }
 
+
   }
 
   deleteTeam(team: Team): void{
-    this._deleteTeam(team.id);
+    this._deleteTeam(team.id).subscribe(()=>{
+      this.navigateTo("teams");
+    }, (error)=>{
+      console.log("error: "+error.error);
+    });
   }
 
   private _editTeam(id: number):any/*Observable<Team>*/{
-    
-    this.team.projects = this.projects;
+
+    this.team.name = this.name.value;
     return this.teamService.editTeam(id, this.team);
 
   }
 
-  private _createTeam():any/*Observable<Team>*/{
-    
-    this.team.projects = this.projects;
+  private _createTeam():Observable<Team>{
+
+    this.team = {name: this.name.value, projects: this.projects}
+
     return this.teamService.createTeam(this.team);
 
   }
 
-  private _deleteTeam(id: number):any/*Observable<Team>*/{
-    
+  private _deleteTeam(id: number): Observable<Team>{
+
     return this.teamService.deleteTeam(id);
 
   }
@@ -104,9 +117,12 @@ export class TeamCreateComponent implements OnInit {
   }
 
   getErrorMessageName(): String {
-
     return this.name.hasError('required')?'Este campo es requerido.':this.name.hasError('maxlength')?'Este campo no permite más de 15 caracteres.':'';
 
+  }
+
+  navigateTo(route: string): void{
+    this.router.navigate([route]);
   }
 
 }

@@ -1,26 +1,31 @@
 <div class="general">
 
-<section>
-<div id="header-sprints-project">
-  <div id="title-sprint">
-      <h1 class="TM">Teams</h1>
-  </div>
-  <div id="buttons-project">
-    <button class="but" mat-flat-button  (click)="createTeam()" >Crear Equipo</button>
-  </div>
-</div>
-</section>
+  <section>
+    <div id="header-sprints-project">
+      <div id="title-sprint">
+        <h1 class="TM">Teams</h1>
+      </div>
+      <div id="buttons-project">
+        <button class="but" mat-flat-button (click)="createTeam()">Crear Equipo</button>
+      </div>
+    </div>
+  </section>
 
-<div class="equiposGeneral">
+  <div class="equiposGeneral">
 
     <mat-list-item class="team" *ngFor="let team of teams">
       <div class="first-div">
-        
-        <h3 matLine><mat-icon matListIcon>people</mat-icon> {{team.name}} <mat-icon (click)="editTeam(team)" matListIcon>create</mat-icon><mat-icon (click)="createProject(team)" matListIcon>add</mat-icon></h3>
+
+        <h3 matLine>
+          <mat-icon matListIcon>people</mat-icon> {{team.name}}
+          <mat-icon (click)="editTeam(team)" matListIcon>create</mat-icon>
+          <mat-icon (click)="createProject(team)" matListIcon>add</mat-icon>
+          <mat-icon matListIcon (click)="deleteTeam(team.id)">delete</mat-icon>
+        </h3>
       </div>
       <div>
         <mat-list-item *ngFor="let project of team.projects">
-      
+
           <mat-card class="second-div">
 
             <p class="title">{{project.name}}</p>
@@ -28,19 +33,19 @@
             <mat-card class="div2">
 
               <mat-icon matListIcon>table_chart</mat-icon>
-              <mat-icon matListIcon>insert_chart</mat-icon>
-              <mat-icon (click)="openProject(project)" matListIcon>work</mat-icon>
+              <mat-icon matListIcon (click)="openSprint(project)">insert_chart</mat-icon>
+              <mat-icon matListIcon (click)="openProject(project)" >work</mat-icon>
 
             </mat-card>
 
           </mat-card>
 
         </mat-list-item>
-        
+
       </div>
-       
+
     </mat-list-item>
 
-</div>
+  </div>
 
 </div>

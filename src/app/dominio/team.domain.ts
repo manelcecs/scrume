@@ -6,3 +6,9 @@ export interface Team {
     projects: ProjectDto[];
 
 }
+
+export interface TeamSimple{
+    id: number;
+    name?: string;
+}
+

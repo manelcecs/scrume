@@ -3,10 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  "login": {
+    "user": "testuser@gmail.com",
+    "pass": "123456"
+  },
+  "backend": '/'
 };
 
-/*
+/*'https://api-scrume.cleverapps.io/'
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *
